@@ -3,17 +3,74 @@
 
 <head>
 <style>
+* {
+  box-sizing: border-box;
+}
 body {
   background-image: url('https://github.com/JerlynPascua/Lab2/blob/main/week3/starrybg.jpg?raw=true');
 }
+header {
+  background-color: #DAF0DE;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family:courier;
+  border-style: double;
+  border-radius: 20px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #B8DBD0;
+  padding: 20px;
+   text-align: left;
+  font-size: 20px;
+  color: white;
+  font-family:courier;
+  border-style: double;
+  border-radius: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: li;
+  padding: 10;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #89B2B9;
+  height: 300px; /* only for demonstration, should be removed */
+    font-size: 20px;
+  color: white;
+  font-family:courier;
+  border-style: double;
+  border-radius: 20px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 #myHeader {
   background-color: lightblue;
   color: black;
-  border: 2px transparent #E0BBE4;
+  border: 2px transparent white;
   padding: 10px;
   text-align: center;
   font-family:courier;
   border-style: double;
+  border-radius: 20px;
 } 
 .mercy {
   background-color: #FFDFD3;
@@ -24,7 +81,13 @@ body {
   border-style: dotted;
   text-align: center;
   font-family:courier;
+  border-radius: 20px;
 }
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
 <title>Personal Profile</title>
 <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/pinkcup.ico">
 
@@ -33,8 +96,8 @@ body {
 
 <body>
 
-<h1 style="text-align:center;font-family:courier;background-color:#FFD9D4"><b><ins>Jerlyn Camille Pascua's Test Portfolio</ins></b></h1>
-<p style="background-color:#CBC3E3;text-align:center;font-family:courier">This page will symbolize as my test website for webprog</p>
+<h1 style="text-align:center;font-family:courier;background-color:#FFD9D4;border:2px solid white;border-radius: 20px;padding:15px"><b><ins>Jerlyn Camille Pascua's Test Portfolio</ins></b></h1>
+<p style="background-color:#CBC3E3;text-align:center;font-family:courier;border:2px solid white;border-radius: 20px;">This page will symbolize as my test website for webprog</p>
 
 <p style="text-align:center;font-family:courier">A short description about me!</p>
 <blockquote cite="http://apcwebprog.csf.ph/~jppascua/"; style="text-align:center;font-family:courier"><small>
@@ -68,7 +131,31 @@ I am a student under Asia Pacific College at my 2nd year as an undergraduate and
 <h2>Please ignore this part of my website.</h2>
 <p> These are just visual representations for future modifications of my project</p>
 </div>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li>not yet listed</li>
+      <li>not yet listed</li>
+      <li>not yet listed</li>
+      <li>not yet listed</li>
+      <li>not yet listed</li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>as of the moment, there are no listed links or at the least previews of my works, I have not gathered them. This will be writted as future modifications.</p>
+  </article>
+</section>
+
+
 </body>
 </html>
+
 
 <!-- <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"> -->
