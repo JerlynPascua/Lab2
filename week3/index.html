@@ -1,406 +1,388 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-<style>
-* {
-  box-sizing: border-box;
-}
-body {
-  background-image: url('https://github.com/JerlynPascua/Lab2/blob/main/week3/starrybg.jpg?raw=true');
-}
-header {
-  background-color: #DAF0DE;
-  padding: 20px;
-  text-align: center;
-  font-size: 25px;
-  color: white;
-  font-family:courier;
-  border-style: double;
-  border-radius: 20px;
-}
+<html lang="en">
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 50%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #B8DBD0;
-  padding: 20px;
-   text-align: left;
-  font-size: 20px;
-  color: white;
-  font-family:courier;
-  border-style: double;
-  border-radius: 20px;
-  overflow: auto;
-}
+  <head>
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: li;
-  padding: 10;
-}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-article {
-  float: left;
-  padding: 20px;
-  width: 50%;
-  background-color: #89B2B9;
-  height: 300px; /* only for demonstration, should be removed */
-    font-size: 20px;
-  color: white;
-  font-family:courier;
-  border-style: double;
-  border-radius: 20px;
-  overflow: auto;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-footer {
-  background-color: #A9BD95;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  font-family:courier;
-  border-style: double;
-  border-radius: 20px;
-}
-div.scroll {
-  height: 600px;
-  overflow: auto;
-  width: 900px;
-  background: #F5D7DA;
-  border-radius: 10%;
-  padding: 10px;
-  text-align: center;
-  margin: auto;
-  margin-top: 3%;
-  color: black;
-}
-#myHeader {
-  background-color: lightblue;
-  color: black;
-  border: 2px transparent white;
-  padding: 10px;
-  text-align: center;
-  font-family:courier;
-  border-style: double;
-  border-radius: 20px;
-} 
-.mercy {
-  background-color: #FFDFD3;
-  color: black;
-  border: 2px solid #E0BBE4;
-  margin: 10px;
-  padding: 10px;
-  border-style: dotted;
-  text-align: center;
-  font-family:courier;
-  border-radius: 20px;
-}
-.box {
-    width: 800px;
-    background: #F5D7DA;
-    border-radius: 10%;
-    padding: 20px;
-    text-align: center;
-    margin: auto;
-    margin-top: 3%;
-    color: black;
-    {
- 
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-<title>Personal Profile</title>
-<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/pinkcup.ico">
+    <title>Jerlyn's Portfolio</title>
 
-</style>
-</head>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-tale-seo-agency.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  </head>
 
 <body>
 
-<h1 class="font-effect-shadow-multiple" style="text-align:center;font-family:courier;background-color:#FFD9D4;border:2px solid white;border-radius: 20px;padding:15px"><b><ins>&#128151;Jerlyn Camille Pascua's Test Portfolio&#128151;</ins></b></h1>
-<p style="background-color:#CBC3E3;text-align:center;font-family:courier;border:2px solid white;border-radius: 20px;">This page will symbolize as my test website for webprog</p>
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Pre-Header Area Start ***** -->
+  <div class="pre-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-9">
+          <div class="left-info">
+            <ul>
+              <li><a href="#"><i class="fa fa-phone"></i>+63 912 345 6789</a></li>
+              <li><a href="#"><i class="fa fa-envelope"></i>jppascua@student.apc.edu.ph</a></li>
+              <li><a href="#"><i class="fa fa-map-marker"></i>Asia Pacific College - Magallanes, Makati</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-3">
+          <div class="social-icons">
+            <ul>
+              <li><a href="https://www.facebook.com/cumsyy" target="_blank"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/jerlyn-camille-pascua-3ab4b818b/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Pre-Header Area End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="" style="max-width: 112px;">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                      <li class="scroll-to-section"><a href="#services">Services</a></li>
+                      <li class="scroll-to-section"><a href="#projects">Projects</a></li>
+                      <li class="has-sub">
+                          <a href="javascript:void(0)">Pages</a>
+                          <ul class="sub-menu">
+                              <li><a href="about.html">Playlist</a></li>
+                              <li><a href="faqs.html">More</a></li>
+                          </ul>
+                      </li>
+                      <li class="scroll-to-section"><a href="#infos">Infos</a></li>
+                      <li class="scroll-to-section"><a href="#contact">Contact</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="caption header-text">
+            <h6>Jerlyn Camille Pascua</h6>
+			<h6>BSIT MI 211</h6>
+            <div class="line-dec"></div>
+            <h4>My <em>Example Portfolio</em><br>(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧<span>WEBPROG</span></h4>
+            <p>This is a modified template website with 3 HTML pages in completion to my subject course WEBPROG,to view more be directed to - <a href="index.html">Home</a>, <a href="about.html">About</a>, and <a href="faqs.html">FAQ</a>.</p>
+            <div class="main-button scroll-to-section"><a href="#services">Discover More</a></div>
+            <span>or</span>
+            <div class="second-button"><a href="faqs.html">Check our FAQs</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-heading">
+                <h2>Here are some <em>Basic Information</em> &amp;
+                  <span>My Thoughts</span> on this website</h2>
+                  <div class="line-dec"></div>
+                  <p>please note that I am making the best out of this test portfolio</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="assets/images/services-01.jpg" alt="" class="templatemo-feature">
+                </div>
+                <h4>I go to school at Asia Pacific College</h4>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="assets/images/services-02.jpg" alt="" class="templatemo-feature">
+                </div>
+                <h4>Asia Pacific College is related to National University</h4>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="assets/images/services-03.jpg" alt="" class="templatemo-feature">
+                </div>
+                <h4>I wish to learn more about website making</h4>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="assets/images/services-04.jpg" alt="" class="templatemo-feature">
+                </div>
+                <h4>I hope to build connections of information through website</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects section" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2>My <em>Works</em> &amp; <span>Projects</span></h2>
+            <div class="line-dec"></div>
+            <p>If you are redirected on the top of the page that will indicate that there is no link attached. It will serve as a future project</p>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-features owl-carousel">
+            <div class="item">
+              <img src="assets/images/projects-01.jpg" alt="">
+              <div class="down-content">
+                <h4>open slot for future projects</h4>
+                <a href="#"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/projects-02.jpg" alt="">
+              <div class="down-content">
+                <h4>open slot for future projects</h4>
+                <a href="#"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/projects-03.jpg" alt="">
+              <div class="down-content">
+                <h4>open slot for future projects</h4>
+                <a href="#"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/projects-04.jpg" alt="">
+              <div class="down-content">
+                <h4>open slot for future projects</h4>
+                <a href="#"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/projects-02.jpg" alt="">
+              <div class="down-content">
+                <h4>open slot for future projects</h4>
+                <a href="#"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/projects-03.jpg" alt="">
+              <div class="down-content">
+                <h4>open slot for future projects</h4>
+                <a href="#"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="infos section" id="infos">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="main-content">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="left-image">
+                  <img src="assets/images/left-infos.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="section-heading">
+                  <h2>Total progress of the <em>Website</em> &amp; My <span>Projects</span></h2>
+                  <div class="line-dec"></div>
+                  <p>The progress bars may change within time as soon as I finish my future projects and works</p>
+                </div>
+                <div class="skills">
+                  <div class="skill-slide marketing">
+                    <div class="fill"></div>
+                    <h6>Website's Frontend code</h6>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill-slide digital">
+                    <div class="fill"></div>
+                    <h6>Website's Backend code</h6>
+                    <span>70%</span>
+                  </div>
+                  <div class="skill-slide media">
+                    <div class="fill"></div>
+                    <h6>Projects listing</h6>
+                    <span>95%</span>
+                  </div>
+                </div>
+                <p class="more-info">Be informed that these statistics may change in time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-us section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="contact-us-content">
+            <div class="row">
+              <div class="col-lg-4">
+                <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.1900774536175!2d121.01912631582154!3d14.531117582669072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c93018658925%3A0x6de8e16ad051b59e!2sAsia%20Pacific%20College!5e0!3m2!1sen!2sph!4v1672363232448!5m2!1sen!2sph" width="100%" height="670px" frameborder="0" style="border:0; border-radius: 23px;" allowfullscreen=""></iframe>
+				</div>
+              </div>
+              <div class="col-lg-8">
+                <form id="contact-form" action="" method="post">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="section-heading">
+                        <h2><em>Contact Me</em> &amp; Get In <span>Touch</span></h2>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="surname" name="surname" id="surname" placeholder="Your Surname..." autocomplete="on" required>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="subject" name="subject" id="subject" placeholder="Subject..." autocomplete="on" >
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+                <div class="more-info">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="info-item">
+                        <i class="fa fa-phone"></i>
+                        <h4><a href="#">123-4567</a></h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="info-item">
+                        <i class="fa fa-envelope"></i>
+                        <h4><a href="#">jppascua@student.apc.edu.ph</a></h4>
+                        <h4><a href="#">camseey@gmail.com</a></h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="info-item">
+                        <i class="fa fa-map-marker"></i>
+                        <h4><a href="#">Makati, Magallanes - Asia Pacific College</a></h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+		<p><br>This webpage will serve as an example portfolio for JCPP's Webprog completion</p>
+		
+      </div>
+    </div>
+  </footer>
 
 
-<p style="text-align:center;font-family:courier">A short description about me!</p>
-<div class = box>
-<blockquote cite="http://apcwebprog.csf.ph/~jppascua/"; style="text-align:center;font-family:courier"><small>
-I am a student under Asia Pacific College at my 2nd year as an undergraduate and i am making this test portfolio as partial fulfillment for my course subject WEBPROG.
-<br></br>
-<br></br>
-<li style="text-align:justify">I enjoy coding subjects but sometimes I find it difficult when I lose track on one particular topic</li>
-<br></br>
-<li style="text-align:justify">I went to APC in my Senior High School, I graduated as a STEM student also under Information Tech</li>
-<br></br>
-<li style="text-align:justify">I am an SM scholar having my tuition paid 100%, meaning I dont have to pay for tuition which is great!</li>
-<br></br>
-<li style="text-align:justify">I'm not really a smart person but I am bright in some areas, I have my own unique trait which I really love about myself.</li>
-<br></br>
-<li style="text-align:justify"> I'm 19 years old and will be 20 on 2023!</li>
-<br></br>
-<li style="text-align:justify"> I try to romanticize adulting life to make it bearable, I'm really doing my best to keep myself positive at all times </li>
-<br></br>
-<li style="text-align:justify"> For more information about me, here's a link to my personal profile on <a href="https://www.facebook.com/profile.php?id=100034479443884" target="_blank">Facebook!</a></li>
-</small></blockquote>
-</div>
-<br></br>
-<p style="text-align:center;font-family:courier"> Press bongo cat for a special surprise! go easy on clicking bongo cat it hurts his ears! also you can play music there, its one of my fav songs!</p>
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-<p style="text-align:center;font-family:courier">~~~~<br>
-
-<a href="http://apcwebprog.csf.ph/~jppascua/" target="_blank"><img src="https://github.com/JerlynPascua/Lab2/blob/main/week3/cutiepie.png?raw=true" alt="" style="width:70px;height:70px;text-align:center;"></a><nobr>
-
-</nobr><a href="http://apcwebprog.csf.ph/~jppascua/" target="_blank"><img src="https://github.com/JerlynPascua/Lab2/blob/main/week3/cutiepie2.png?raw=true" alt="" style="width:70px;height:70px;text-align:center;"></a><nobr>
-
-</nobr><a href="http://apcwebprog.csf.ph/~jppascua/" target="_blank"><img src="https://github.com/JerlynPascua/Lab2/blob/main/week3/cutiepie.png?raw=true" alt="" style="width:70px;height:70px;text-align:center;"></a>
-</br></p>
-
-<div align="center">
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/SONGV1.ogg" type="audio/ogg">
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/SONGV2.mpeg" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-</audio>
-</div>
-
-<p style="text-align:center;"><a href="http://apcwebprog.csf.ph/~jppascua/" target="_blank"><img src="https://github.com/JerlynPascua/Lab2/blob/main/week3/cutiepie.png?raw=true" alt="" style="width:70px;height:70px;text-align:center;"></a><nobr>
-
-</nobr><a href="http://apcwebprog.csf.ph/~jppascua/" target="_blank"><img src="https://github.com/JerlynPascua/Lab2/blob/main/week3/cutiepie2.png?raw=true" alt="" style="width:70px;height:70px;text-align:center;"></a><nobr>
-
-</nobr><a href="http://apcwebprog.csf.ph/~jppascua/" target="_blank"><img src="https://github.com/JerlynPascua/Lab2/blob/main/week3/cutiepie.png?raw=true" alt="" style="width:70px;height:70px;text-align:center;"></a>
-</br></p>
-
-<p style="text-align:center;font-family:courier">~~~~</p>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
 
 
-<div style="border: 2px solid pink ;font-family:courier;text-align:center;">Little note:<br></br>
-<small>I am no expert when it comes to modifying a website, I am learning as I make this html website so please bear with me, I try to make use of my skills as much as I can</small></div>
-<p style="text-align:center;"><img src="https://github.com/JerlynPascua/Lab2/blob/main/week3/profile2.png?raw=true" alt="profilepicture" width="500" height="500" class = "center"></p>
+  </body>
 
-<br></br>
-  <h1 id="myHeader">Extra content ahead!</h1>
-<div class = "mercy">
-<h2>Please ignore this part of my website.</h2>
-<p> These are just visual representations for future modifications of my project</p>
-</div>
-
-<header>
-  <h2>List of Projects!</h2>
-</header>
-
-<section>
-  <nav>
-    <ul>
-      <li><a href="https://jappytoktok.w3spaces.com/">TOKTOK Shop Link! (WIP)</a></li>
-      <li>not yet listed</li>
-      <li>not yet listed</li>
-      <li>not yet listed</li>
-      <li>not yet listed</li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>Why is there no content ?</h1>
-    <p>as of the moment, there is one link listed out of all my workd, I have not gathered them also note that the shop is noted as a work in progress. This will be written as future modifications.</p>
-  </article>
-</section>
-
-<section>
-<footer>
-<h1>Future modifications are in progress</h1>
-</footer>
-</section>
-<br></br>
-
-
-<div align="center">
-			<div class = "mercy">
-<h2>here's my playlist for people with no spotify premium!</h2>
-			</div>
-	<div class="scroll">
-	<div align="center">
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/Blackpink Shutdown.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>Blackpink - Shutdown</b></h3>
-
-<br></br>
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/Blackpink Typa Girl.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>Blackpink - Typa Girl</b></h3>
-
-<br></br>
-
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/G-idle-Alone.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>G-IDLE - Alone</b></h3>
-
-<br></br>
-
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/G-idle-MyBag.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>G-IDLE - My Bag</b></h3>
-
-<br></br>
-
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/G-idle-Nude.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>G-IDLE - Nxde</b></h3>
-
-<br></br>
-
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/Le-Sserafim-Antifragile.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>LE SSerafim - Antifragile</b></h3>
-
-<br></br>
-
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/Le-Sserafim-Blue-Flame.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>LE SSerafim - Blue Flame</b></h3>
-
-<br></br>
-
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/Le-Sserafim-Fearless.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>LE SSerafim - Fearless</b></h3>
-
-<br></br>
-
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/Le-Sserafim-Impurities.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>LE SSerafim - Impurities</b></h3>
-
-<br></br>
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/Le-Sserafim-Impurities.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>NewJeans - Attention</b></h3>
-
-<br></br>
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/NewJeans_Cookie.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>NewJeans - Cookie</b></h3>
-
-<br></br>
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/NewJeans_Hurt.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>NewJeans - Hurt</b></h3>
-
-<br></br>
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/JerlynPascua/Lab2/main/week3/NewJeans_Hype_Boy.ogg.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<nobr></nobr>
-<h3 style="font-family:courier"><b>NewJeans - Hype Boy</b></h3>
-
-<br></br>
-
-
-
-	</div>
-	</div>
-</div>
-
-<p style="text-align:center;font-family:courier"><b>Here's a short preview of my spotify playlist!</b></p>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1OCEbAQoq9x6xKBfxbePKM?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-<p style="background-color:#CBC3E3;text-align:center;font-family:courier;border:2px solid white;border-radius: 20px;">&#x1f97a; I am open for commission &#x20B1;50 &#x1f97a;</p>
-
-</body>
 </html>
-
-
-<!-- <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"> -->
-
-<!--&entity_name;
-OR
-
-&#entity_number; -->
-
-<!-- I forgot to commit a lesson oopsie, ignore this -->
-
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"> -->
-
-<!-- 
-css first lesson bg commit done
-1.2 lesson done
-1.3 lesson done
-1.4 lesson done
-1.5 lesson done
-1.6 lesson done
-2.1 done
-2.2 done
-2.3 done
-2.4 done
-3.1 done
-3.2 done
-3.3 done
-3.4 done
-3.5 done
-4.1 done
-4.2 done-->
