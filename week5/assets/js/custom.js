@@ -1,7 +1,9 @@
 (function ($) {
 	
 	"use strict";
-
+/*!
+loading page - animation  design not included here
+*/
 	// Page loading animation
 	$(window).on('load', function() {
 
