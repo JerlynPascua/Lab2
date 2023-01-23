@@ -15,6 +15,10 @@
  * @todo Test Zepto
  * @todo stagePadding calculate wrong active classes
  */
+ 
+ /*!
+ Javascrip second preview is carousel jshint
+ */
 ;(function($, window, document, undefined) {
 
 	/**
