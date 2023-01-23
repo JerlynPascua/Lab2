@@ -53,6 +53,9 @@ $.extend( $.ui, {
 });
 
 // plugins
+/*!
+this section contains plugins for my javascript file
+*/
 $.fn.extend({
 	scrollParent: function( includeHidden ) {
 		var position = this.css( "position" ),
