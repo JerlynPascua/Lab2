@@ -246,6 +246,9 @@ Menu dropdown option in home (index.html)
 
 	const dropdownOpener = $('.main-nav ul.nav .has-sub > a');
 
+/*!
+submenu open close js information
+*/
     // Open/Close Submenus
     if (dropdownOpener.length) {
         dropdownOpener.each(function () {
