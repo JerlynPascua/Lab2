@@ -324,6 +324,7 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+<center>
 ?>
 
 <h2>PHP Form Validation Example</h2>
@@ -361,7 +362,7 @@ echo $comment;
 echo "<br>";
 echo $gender;
 ?>
-
+</center>
 
   <div class="cta section">
     <div class="container">
