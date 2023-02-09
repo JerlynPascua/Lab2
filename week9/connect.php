@@ -20,7 +20,7 @@ die('Connect Error ('. mysqli_connect_errno() .') '
 . mysqli_connect_error());
 }
 else{
-$sql = "INSERT INTO jppascua_MyGuests (name, email, message)
+$sql = "INSERT INTO jppascua_myguests (name, email, message)
 values ('$name','$email','$message')";
 if ($conn->query($sql)){
 echo "New record is inserted sucessfully";
