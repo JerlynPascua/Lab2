@@ -1,12 +1,12 @@
 
 <?php
-$fullname = filter_input(INPUT_POST, 'fullname');
+$name = filter_input(INPUT_POST, 'name');
 $email = filter_input(INPUT_POST, 'email');
-$messages = filter_input(INPUT_POST, 'messages');
+$message = filter_input(INPUT_POST, 'message');
 
-if (!empty($fullname)){
+if (!empty($name)){
   if (!empty($email)){
-    if (!empty($messages)){
+    if (!empty($message)){
 
 
       $host = "localhost";
@@ -16,36 +16,20 @@ if (!empty($fullname)){
       // Create connection
       $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 
-if (mysqli_connect_error()){
-die('Connect Error ('. mysqli_connect_errno() .') '
-. mysqli_connect_error());
+	// Check connection
+	if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+	}
+	
+	$sql = "INSERT INTO MyGuests (firstname, lastname, email)
+	VALUES ('$name', '', '$email')";
+	
+	if ($conn->query($sql) === TRUE) {
+	echo "New record created successfully";
+	} else {
+	echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+	
+	$conn->close();
 }
-else{
-$sql = "INSERT INTO cbmedallada_MyGuests (fullname, email, messages)
-values ('$fullname','$email','$messages')";
-if ($conn->query($sql)){
-echo "New record is inserted sucessfully";
-}
-else{
-echo "Error: ". $sql ."
-". $conn->error;
-}
-$conn->close();
-}
-}
-      else{
-        echo "Message should not be empty";
-        die();
-      }
-}
-    else{
-    echo "Email should not be empty";
-    die();
-    }
-}
-else{
-echo "Name should not be empty";
-die();
-}
-
 ?>
