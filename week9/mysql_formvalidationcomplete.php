@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 	die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "INSERT INTO jppascua_myguests (name, lastname, email)
+	$sql = "INSERT INTO jppascua_myguests (name, website, email)
 	VALUES ('$name', '', '$email')";
 	
 	if ($conn->query($sql) === TRUE) {
