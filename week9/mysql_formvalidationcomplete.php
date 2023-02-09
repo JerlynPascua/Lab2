@@ -105,9 +105,9 @@ echo $gender;
 if ($_SERVER["REQUEST_METHOD"] == "POST") 
 {
 	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "myDB";
+	$username = "webprogmi211";
+	$password = "webprogmi211";
+	$dbname = "webprogmi211";
 	
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 	die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "INSERT INTO MyGuests (firstname, lastname, email)
+	$sql = "INSERT INTO jppascua_myGuests (firstname, lastname, email)
 	VALUES ('$name', '', '$email')";
 	
 	if ($conn->query($sql) === TRUE) {
