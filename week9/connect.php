@@ -1,11 +1,11 @@
 <?php
-$fullname = filter_input(INPUT_POST, 'fullname');
+$name = filter_input(INPUT_POST, 'name');
 $email = filter_input(INPUT_POST, 'email');
-$messages = filter_input(INPUT_POST, 'messages');
+$message = filter_input(INPUT_POST, 'message');
 
-if (!empty($fullname)){
+if (!empty($name)){
   if (!empty($email)){
-    if (!empty($messages)){
+    if (!empty($message)){
 
 
       $host = "localhost";
@@ -20,8 +20,8 @@ die('Connect Error ('. mysqli_connect_errno() .') '
 . mysqli_connect_error());
 }
 else{
-$sql = "INSERT INTO cbmedallada_MyGuests (fullname, email, messages)
-values ('$fullname','$email','$messages')";
+$sql = "INSERT INTO jppascua_MyGuests (name, email, message)
+values ('$name','$email','$message')";
 if ($conn->query($sql)){
 echo "New record is inserted sucessfully";
 }
