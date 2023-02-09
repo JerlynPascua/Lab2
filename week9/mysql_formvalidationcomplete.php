@@ -116,8 +116,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 	die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "INSERT INTO jppascua_myguests (name, website, email)
-	VALUES ('$name', '', '$email')";
+	$sql = "INSERT INTO jppascua_myguests (name, email, website, message, gender)
+	VALUES ('$name', '$email', '$website', '$message', '$gender')";
 	
 	if ($conn->query($sql) === TRUE) {
 	echo "New record created successfully";
