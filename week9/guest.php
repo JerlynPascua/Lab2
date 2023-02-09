@@ -15,13 +15,13 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT fullname, email, messages FROM jppascua_myguests";
+$sql = "SELECT name, email, website, messages, gender FROM jppascua_myguests";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> Name: ". $row["fullname"]. " - Email: ". $row["email"]. " - Messages: " . $row["messages"] . "<br>";
+        echo "<br> Name: ". $row["name"]. " - Email: ". $row["email"]. " - Website: ". $row["website"]." - Messages: " . $row["messages"] . " - Gender: ". $row["gender"]."<br>";
     }
 } else {
     echo "0 results";
