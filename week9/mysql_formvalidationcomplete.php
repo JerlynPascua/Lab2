@@ -105,8 +105,8 @@ echo $gender;
 if ($_SERVER["REQUEST_METHOD"] == "POST") 
 {
 	$servername = "localhost";
-	$username = "webprogmi211";
-	$password = "webprogmi211";
+	$username = "root";
+	$password = "";
 	$dbname = "myDB";
 	
 	// Create connection
