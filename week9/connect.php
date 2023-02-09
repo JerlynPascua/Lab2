@@ -31,20 +31,6 @@ echo "Error: ". $sql ."
 }
 $conn->close();
 }
-}
-      else{
-        echo "Message should not be empty";
-        die();
-      }
-}
-    else{
-    echo "Email should not be empty";
-    die();
-    }
-}
-else{
-echo "Name should not be empty";
-die();
-}
+
 
 ?>
